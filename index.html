@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Aigentask Beta – Do Less. Accomplish More.</title>
-  <link rel="icon" href="/favicon.ico" />
+  <link rel="icon" href="https://aigentask.github.io/aigentask-beta/Aigentask_logo_favicon_01.svg" />
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
     body {
@@ -20,8 +20,9 @@
       margin-bottom: 2rem;
     }
     .logo {
-      max-width: 120px;
+      max-width: 180px;
       margin: 0 auto 1rem;
+      display: block;
     }
     h1 {
       font-size: 2.75rem;
@@ -73,7 +74,7 @@
 </head>
 <body>
   <header>
-   <img src="https://aigentask.github.io/aigentask-beta/Aigentask_logo_Aminos_560x142_02.png" alt="Aigentask Logo" class="logo" />
+    <img src="https://aigentask.github.io/aigentask-beta/Aigentask_logo_Aminos_560x142_02.png" alt="Aigentask Logo" class="logo" />
     <h1>Do Less. Accomplish More.</h1>
     <p>Aigentask gives you a fully trained AI assistant for your business—customized to your menu, hours, and voice. Ready in 48 hours. No app required.</p>
   </header>
@@ -84,7 +85,15 @@
 
     <h2>🤖 Try the Assistant</h2>
     <p>This is a live demo of the assistant trained for a fictional bar & grill, <strong>Squawkers</strong>. Ask it anything a guest might want to know—menu items, hours, dietary info, etc.</p>
-    <iframe src="https://app.aigentask.com/embed/49505" height="500"></iframe>
+    <div id="chatbot-container" style="height: 500px; border-radius: 12px; overflow: hidden;"></div>
+    <script>
+      window.addEventListener('DOMContentLoaded', function () {
+        const script = document.createElement('script');
+        script.src = "https://app.aigentask.com/js/chat_plugin.js";
+        script.setAttribute("data-bot-id", "49505");
+        document.body.appendChild(script);
+      });
+    </script>
     <p class="italic">Pretty cool, right? Yours will be trained to match your exact vibe and menu.</p>
 
     <h2>💡 What You Get</h2>
