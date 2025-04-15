@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Aigentask Beta – Do Less. Accomplish More.</title>
-  <link rel="icon" href="https://raw.githubusercontent.com/aigentask/aigentask-beta/b2d45d1acea6b2c0445e3845a45874b607aa806e/Aigentask_logo_favicon_01.svg" />
+  <link rel="icon" href="https://aigentask.github.io/aigentask-beta/Aigentask_logo_favicon_01.svg" />
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
     body {
@@ -74,10 +74,11 @@
 </head>
 <body>
   <header>
-    <img src="https://raw.githubusercontent.com/aigentask/aigentask-beta/refs/heads/main/Aigentask_logo_Aminos_560x142_02.png" alt="Aigentask Logo" class="logo" />
-    <h1>Do Less.<br>
-      Accomplish More.</h1>
-    <p>Aigentask gives you a fully trained AI assistant for your business—customized to your menu, hours, and voice. <br><br>Ready in 48 hours. No app required.</p>
+    <div class="section">
+      <img src="https://aigentask.github.io/aigentask-beta/Aigentask_logo_Aminos_560x142_02.png" alt="Aigentask Logo" class="logo" />
+      <h1>Do Less. Accomplish More.</h1>
+      <p>Aigentask gives you a fully trained AI assistant for your business—customized to your menu, hours, and voice. Ready in 48 hours. No app required.</p>
+    </div>
   </header>
 
   <div class="section">
@@ -85,11 +86,16 @@
     <iframe src="https://www.loom.com/embed/YOUR-LOOM-VIDEO-ID" frameborder="0" allowfullscreen height="400"></iframe>
 
     <h2>🤖 Try the Assistant</h2>
-    <p>There is a live demo of the assistant on this page. Just click the icon on the bottom right corner to try it out. 
-      <br><br>This demo is trained for a fictional bar & grill, <strong>Squawkers</strong>. Ask it anything a guest might want to know—menu items, hours, dietary info, etc.</p>
-<!-- Demo Embed Code -->
-    <script src="https://app.aigentask.com/js/chat_plugin.js" data-bot-id="49505"></script>
-    
+    <p>This is a live demo of the assistant trained for a fictional bar & grill, <strong>Squawkers</strong>. Ask it anything a guest might want to know—menu items, hours, dietary info, etc.</p>
+    <div id="chatbot-container" style="height: 500px; border-radius: 12px; overflow: hidden;"></div>
+    <script>
+      window.addEventListener('DOMContentLoaded', function () {
+        const script = document.createElement('script');
+        script.src = "https://app.aigentask.com/js/chat_plugin.js";
+        script.setAttribute("data-bot-id", "49505");
+        document.body.appendChild(script);
+      });
+    </script>
     <p class="italic">Pretty cool, right? Yours will be trained to match your exact vibe and menu.</p>
 
     <h2>💡 What You Get</h2>
