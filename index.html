@@ -11,8 +11,8 @@
       font-family: 'Manrope', 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
       margin: 0;
       padding: 2rem;
-      background-color: #ffffff;
-      color: #1a1a1a;
+      background-color: #202124; /* Updated Charcoal */
+      color: #e6e7e9; /* Updated Graphite White */
       line-height: 1.6;
     }
     header {
@@ -27,7 +27,7 @@
     h1 {
       font-size: 2.75rem;
       margin-bottom: 0.5rem;
-      color: #9B5DE5;
+      color: #9B5DE5; /* Electric Purple */
     }
     h2 {
       font-size: 1.5rem;
@@ -70,6 +70,14 @@
       margin-right: 0.5rem;
       color: #9B5DE5;
     }
+    footer {
+      margin-top: 4rem;
+      padding-top: 2rem;
+      border-top: 1px solid #444;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #888;
+    }
   </style>
 </head>
 <body>
@@ -85,7 +93,6 @@
 
     <h2>🤖 Try the Assistant</h2>
     <p>This is a live demo of the assistant trained for a fictional bar & grill, <strong>Squawkers</strong>. Ask it anything a guest might want to know—menu items, hours, dietary info, etc.</p>
-    <div id="chatbot-container" style="height: 500px; border-radius: 12px; overflow: hidden;"></div>
     <script>
       window.addEventListener('DOMContentLoaded', function () {
         const script = document.createElement('script');
@@ -107,6 +114,10 @@
     <h2>💳 Join the Beta</h2>
     <p>Become a beta partner and get your assistant built for just $250.</p>
     <a href="https://buy.stripe.com/6oE4iP0sFfHQbpyaEH" class="cta">Pay $250 & Get Started</a>
+
+    <footer>
+      &copy; 2024 Aigentask. All rights reserved.
+    </footer>
   </div>
 </body>
 </html>
