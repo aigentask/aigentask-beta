@@ -70,6 +70,13 @@
       margin-right: 0.5rem;
       color: #9B5DE5;
     }
+.bullets {
+  list-style: disc;
+  padding-left: 1.5rem;
+}
+.bullets li::before {
+  content: none; /* removes the ✅ from this list only */
+}
     footer {
       margin-top: 4rem;
       padding-top: 2rem;
@@ -122,15 +129,10 @@
 
 <h2>⌛ Now is the Time</h2>
  <h3>Lock in early access—before prices go up!</h3>    
-<ul class="list-disc pl-5 space-y-1"> 
+<ul class="bullets"> 
   <li>Our Beta Partner Program is just $250 for 90 days.</li>
   <li>After beta, pricing starts at $99/month and scales with features.</li>
 </ul>
-    <!--
-    <p>Lock in early access—before prices go up!</p>
-    <p>Our Beta Partner Program is just $250 for 90 days.</p>
-    <p>After beta, pricing starts at $99/month and scales with features.</p>
-    -->
 <h3>Exclusive Beta Perks:</h3>
 <ul>
   <li>Unlimited updates + Hands-on Support</li>
